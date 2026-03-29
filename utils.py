@@ -20,6 +20,7 @@ EXCEL_CONTEXT = ""
 # configure SDK and model (use env var fallback)
 # Read API key robustly (strip quotes if present) and configure
 raw_key = os.getenv("GOOGLE_API_KEY") or os.environ.get("GOOGLE_API_KEY")
+print(raw_key)
 API_KEY = None
 if raw_key:
     API_KEY = raw_key.strip().strip('"').strip("'")
